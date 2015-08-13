@@ -1,0 +1,149 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+
+/* Cartas */
+.carta-container {
+  display: inline-block;
+  height: 550px;
+  margin: 10px;
+  position: relative;
+  width: 323px;
+  z-index: 1;
+}
+
+.carta-container img{
+  height: 550px;
+  width: 323px;
+}
+
+.carta-container {
+    -webkit-perspective: 800;
+  -moz-perspective: 800;
+  perspective: 800;
+}
+
+.carta {
+  box-shadow: 0px 0px 5px black;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 0.5s;
+    
+    -moz-transform-style: preserve-3d;
+  -moz-transition: all 0.5s;
+    
+    transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+.carta-container:hover .carta{
+  -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.carta .lado{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.carta .frente{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+.carta .atras{
+  background: #F0F0F0;
+  font-family: Helvetica, Verdana, Arial;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.carta-container .atras .header{
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.atras .contentCard{
+  padding:30px;
+}

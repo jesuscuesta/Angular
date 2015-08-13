@@ -1,0 +1,18 @@
+<div class="row marketing">
+  Aquí irá el juego de cartas
+</div>
+<section id="tablero">
+  <div class="carta-container" ng-repeat="card in vm.cards">
+    <div class="carta">
+      <div class="lado frente">
+        <img src="images/{{card.img}}" alt="">
+      </div>
+    <div class="lado atras">
+      <div class="header daft">
+        {{card.title}}
+      </div>
+      <div class="contentCard">{{card.content}}</div>
+      </div>  
+    </div>
+  </div>
+</section>
